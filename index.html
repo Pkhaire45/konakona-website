@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kona Kona Interiors</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+ <style>
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps it above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+ </style>
+
+
+  
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <img src="images/logo2.png" alt="Logo" style="height: 40px;">
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<div class="hero-section">
+  <!-- Background Images -->
+  <div class="hero-bg"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-bg"></div>
+
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Hero Content -->
+  <div class="container hero-content">
+    <h1>Precise concept design<br>for stylish living</h1>
+    <p>
+      If you are looking at blank cassettes on the web, you may be very confused at the difference
+      in price. You may see some for as low as $.17 each. You may be saying to yourself.
+    </p>
+    <a href="#" class="btn">Get Started</a>
+  </div>
+</div>
+</div>
+  <section class="why-choose-us py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Why Choose Us</h2>
+      <p class="mb-5">We offer perfect interior services</p>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-3">
+          <div class="feature-card text-center">
+            <i class="bi bi-house mb-3" style="font-size: 2.5rem; color: #043348;"></i> 
+            <h5>Interior for Home</h5>
+            <p>focuses on designing indoor spaces to enhance functionality, comfort, and aesthetics.It involves choosing furniture, colors, lighting, and decor to reflect personal style while meeting practical needs.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-3">
+          <div class="feature-card text-center">
+            <i class="bi bi-people-fill mb-3" style="font-size: 2.5rem; color: #043348;"></i>
+            <h5>Trusted by Thousands</h5>
+            <p>Our interior design services are trusted by thousands, delivering personalized, stylish, and functional home designs that transform spaces into dream homes.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-3">
+          <div class="feature-card text-center">
+            <i class="bi bi-cash-coin mb-3" style="font-size: 2.5rem; color: #043348;"></i>
+           <h5>Financing Made Easy</h5>
+            <p>"We offer easy financing options to make your interior design journey seamless and affordable, helping you create your dream home without financial stress.</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-3">
+          <div class="feature-card text-center">
+            <i class="bi bi-telephone" style="font-size: 2.5rem; color: #043348;"></i> 
+            <h5>24/7 Support</h5>
+            <p>We offer 24/7 support to ensure all your interior design needs are addressed anytime, making your experience smooth and hassle-free.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Heading -->
+<div class="container my-5">
+  <!-- Contact Heading -->
+  <div class="contact-heading">
+    <!-- <div class="vertical-line"></div> -->
+      <p class="subtitle">Latest</p>
+      <h1 class="main-title">Projects</h1><br>
+      <hr>
+
+     
+  </div>
+<!-- Filter Options -->
+<div class="filter-options d-flex justify-content-center mb-4">
+  <button class="btn filter-btn" data-filter="all">Show All</button>
+  <button class="btn filter-btn active" data-filter="residential">Residential</button>
+  <button class="btn filter-btn" data-filter="commercial">Commercial</button>
+  <button class="btn filter-btn" data-filter="office">Office</button>
+  <button class="btn filter-btn" data-filter="hospitality">Hospitality</button>
+</div>
+
+<!-- Images Section -->
+<div class="row g-4 image-gallery">
+  <div class="col-md-4 filter-item residential active">
+    <img src="images/wp1.png" class="img-fluid" alt="Residential">
+  </div>
+  <div class="col-md-4 filter-item residential active">
+    <img src="images/wp6.png" class="img-fluid" alt="Residential">
+  </div>
+  <div class="col-md-4 filter-item residential active">
+      <img src="images/wp5.png" class="img-fluid" alt="Residential">
+    </div>
+  <div class="col-md-4 filter-item commercial">
+    <img src="images/wp1.png " class="img-fluid" alt="Commercial">
+  </div>
+  <div class="col-md-4 filter-item commercial">
+    <img src="images/wp2.png" class="img-fluid" alt="Commercial">
+  </div>
+  <div class="col-md-4 filter-item commercial">
+    <img src="images/wp3.png" class="img-fluid" alt="Commercial">
+  </div>
+  <div class="col-md-4 filter-item office">
+    <img src="images/wp5.png" class="img-fluid" alt="Office">
+  </div>
+  <div class="col-md-4 filter-item hospitality">
+    <img src="images/wp5.png" class="img-fluid" alt="Hospitality">
+  </div>
+</div>
+  <!-- Heading -->
+  <div class="container my-5">
+    <!-- Contact Heading -->
+    <div class="contact-heading">
+      <!-- <div class="vertical-line"></div> -->
+        <p class="subtitle">Recent</p>
+        <h1 class="main-title">Work</h1><br>
+        <hr>
+  
+       
+    </div>
+
+
+
+<!-- Recent work -->
+<div class="carousel-container">
+<button class="arrow left-arrow" onclick="slideLeft()">&#8249;</button>
+<div class="carousel-wrapper">
+  <div class="carousel">
+    <div class="card">
+      <img src="images/img3.jpg" alt="Luxury House">
+      <div class="details">
+        <h3>Luxury House</h3>
+        <p>$230,000</p>
+        <p>6 Bed | 3 Bath | 720 sq ft</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/img3.jpg" alt="Family Apartment">
+      <div class="details">
+        <h3>Family Apartment</h3>
+        <p>$230,000</p>
+        <p>6 Bed | 3 Bath | 720 sq ft</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/img3.jpg" alt="Villa House">
+      <div class="details">
+        <h3>Villa House</h3>
+        <p>$230,000</p>
+        <p>6 Bed | 3 Bath | 720 sq ft</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/img3.jpg" alt="Villa House">
+      <div class="details">
+        <h3>Villa House</h3>
+        <p>$230,000</p>
+        <p>6 Bed | 3 Bath | 720 sq ft</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/img3.jpg" alt="Villa House">
+      <div class="details">
+        <h3>Villa House</h3>
+        <p>$230,000</p>
+        <p>6 Bed | 3 Bath | 720 sq ft</p>
+      </div>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+</div>
+<button class="arrow right-arrow" onclick="slideRight()">&#8250;</button>
+</div>
+
+  <footer>
+    <div>
+      <h2>READY TO WORK WITH US?</h2>
+      <form>
+        <input type="email" placeholder="Enter your email..." />
+        <button type="submit">➤</button>
+      </form>
+    </div>
+  
+    <div class="footer-sections">
+      <!-- Staging Section -->
+      <div class="footer-section">
+        <h3>Social Links</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+  
+      <!-- Company Section -->
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Our Works</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+  
+      <!-- Services Section -->
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">Architecture</a></li>
+          <li><a href="#">Interior Design</a></li>
+          <li><a href="#">Exterior Design</a></li>
+          <li><a href="#">Planning</a></li>
+        </ul>
+      </div>
+  
+      <!-- Get In Touch Section -->
+      <div class="footer-section">
+        <h3>Get In Touch</h3>
+        <p>Shop No-6 Sunny Orchid Height</p>
+        <p>Plot No-145, Sector -23,</p>
+        <p>Ulwe, Navi Mumbai - 410206</p>
+        <p>Design@konakona.in</p>
+        <p>+91 961-955-5596</p>
+      </div>
+    </div>
+  
+    <div class="copyright">
+      <p>Copyright © 2024 All rights reserved | Kona Kona interiors <span style="color: #f4a261;">&#9829;</span> by <a href="#">Prance Studio</a></p>
+    </div>
+  </footer>
+  
+  
+
+  
+ 
+ 
+
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
