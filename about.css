@@ -363,3 +363,66 @@ footer {
         margin: 5px 0;
     }
 }
+/* General Media Query for Small Devices */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px; /* Scale down font size for smaller screens */
+  }
+
+  header.hero-section {
+    padding: 20px 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-content .highlight {
+    font-size: 0.9em;
+  }
+
+  .hero-content a.cta-button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Services Section */
+  .services-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-box {
+    padding: 15px;
+  }
+
+  /* Footer Section */
+  footer {
+    padding: 20px 10px;
+    font-size: 12px;
+  }
+
+  footer .footer-sections {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footer-section {
+    margin-bottom: 20px;
+  }
+
+  footer .social-icons a {
+    font-size: 16px;
+  }
+
+  /* Navbar */
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+}
