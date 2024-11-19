@@ -1,4 +1,3 @@
-/* General Styles */
 
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,12 +10,12 @@ body {
 }
 
 
-/* Hero Section */
+
 header.hero-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 80px;
+  padding: 90px 80px;
   background-color: #ffffff;
   animation: fade-in 1.5s ease-in-out;
 }
@@ -43,8 +42,8 @@ header.hero-section {
   font-weight: bold;
   color: #043347;
   margin: 20px 0;
-  white-space: nowrap; /* Prevents text wrapping during typing */
-  overflow: hidden;    /* Hides overflowing text */
+  white-space: nowrap; 
+  overflow: hidden;    
   display: inline-block;
   animation: typing 3s steps(40, end), blink 0.7s step-end infinite alternate;
 }
@@ -357,72 +356,110 @@ footer {
     font-weight: bold;
     color: #007bff; /* Highlight color */
 }
-@media (max-width: 768px) {
-    .nav-link {
-        font-size: 1rem;
-        margin: 5px 0;
-    }
-}
-/* General Media Query for Small Devices */
-@media (max-width: 576px) {
-  body {
-    font-size: 14px; /* Scale down font size for smaller screens */
-  }
 
+
+
+/* Medium Screens: Tablets */
+@media (max-width: 1024px) {
+  /* Hero Section */
   header.hero-section {
-    padding: 20px 10px;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
   }
 
-  .hero-content h1 {
-    font-size: 1.8em;
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
-  .hero-content .highlight {
-    font-size: 0.9em;
-  }
-
-  .hero-content a.cta-button {
-    padding: 10px 20px;
-    font-size: 0.9em;
-  }
-
-  .hero-image img {
-    width: 100%;
-    max-width: 300px;
+  .hero-image {
+    max-width: 80%;
     margin: 0 auto;
   }
 
   /* Services Section */
-  .services-section h2 {
-    font-size: 1.8rem;
+  .services-container {
+    gap: 15px;
   }
 
   .service-box {
-    padding: 15px;
+    width: 45%; /* Two columns on medium screens */
+  }
+}
+
+/* Small Screens: Phones */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-content a.cta-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Services Section */
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 100%; /* Full width on small screens */
   }
 
   /* Footer Section */
-  footer {
-    padding: 20px 10px;
-    font-size: 12px;
-  }
-
   footer .footer-sections {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 
   footer .footer-section {
-    margin-bottom: 20px;
-  }
-
-  footer .social-icons a {
-    font-size: 16px;
-  }
-
-  /* Navbar */
-  .nav-link {
-    font-size: 0.9rem;
-    padding: 5px;
+    text-align: center;
+    margin: 20px 0;
   }
 }
+
+/* Extra Small Screens: Small Phones */
+@media (max-width: 480px) {
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  .hero-content a.cta-button {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  /* Services Section */
+  .service-box {
+    width: 100%; /* Stacked on small phones */
+  }
+
+  /* Footer Section */
+  footer .footer-section {
+    font-size: 0.9rem;
+  }
+
+  footer .copyright {
+    font-size: 10px;
+  }
+}
+
+
+

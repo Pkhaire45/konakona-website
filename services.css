@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 80px;
+    padding: 100px 80px;
     background-color: #ffffff;
     animation: fade-in 1.5s ease-in-out;
   }
@@ -271,29 +271,8 @@ body {
     margin: 0;
     line-height: 1.2;
   }
-  .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  .nav-link {
-    font-size: 1.1rem;
-    margin: 0 10px;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-  }
-  .navbar-toggler-icon {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-  }
-  .nav-link.active {
-  font-weight: bold;
-  color: #007bff; /* Highlight color */
-}
-@media (max-width: 768px) {
-  .nav-link {
-      font-size: 1rem;
-      margin: 5px 0;
-  }
-}
+
+
 
 
 footer {
@@ -396,122 +375,132 @@ footer {
     text-decoration: none;
   }
 
-/* Default styles are for desktop screens. Additional styles for smaller devices are added below */
 
-/* Tablets: max-width 1024px */
+
+  /* Responsive Design */
 @media (max-width: 1024px) {
-    header.hero-section {
-        flex-direction: column;
-        padding: 20px;
-    }
+  header.hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
 
-    .hero-content, .hero-image {
-        max-width: 100%;
-        text-align: center;
-    }
+  .hero-content, .hero-image {
+    max-width: 100%;
+    text-align: center;
+  }
 
-    .hero-image {
-        margin-top: 20px;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    footer .footer-sections {
-        flex-direction: column;
-        text-align: center;
-    }
+  .hero-image {
+    margin-top: 20px;
+  }
 }
 
-/* Large Phones: max-width 768px */
 @media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2em;
-    }
+  .hero-content h1 {
+    font-size: 2.2em;
+  }
 
-    .hero-content .highlight {
-        font-size: 1em;
-    }
+  .hero-content .highlight {
+    font-size: 1em;
+  }
 
-    .hero-content p {
-        font-size: 0.9em;
-    }
+  .hero-content p {
+    font-size: 0.9em;
+  }
 
-    .service-card {
-        width: 100%;
-        margin: 0 auto;
-    }
+  .services-section h2 {
+    font-size: 1.8rem;
+  }
 
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    margin: 0 auto;
+  }
+
+  .service-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-content p {
+    font-size: 0.85rem;
+  }
+
+  /* Navbar Adjustments */
+  .nav-link {
+    font-size: 1rem;
+    margin: 5px 0;
+    
+  }
+  @media (max-width: 768px) {
     .nav-link {
         font-size: 1rem;
         margin: 5px 0;
     }
-
-    footer form input[type="email"] {
-        width: 90%;
-    }
 }
 
-/* Small Phones: max-width 576px */
-@media (max-width: 576px) {
-    header.hero-section {
-        padding: 20px;
-    }
+  footer .footer-sections {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .hero-content h1 {
-        font-size: 1.8em;
-    }
+  footer .footer-section {
+    flex: 1 1 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
 
-    .hero-content .highlight {
-        font-size: 0.9em;
-    }
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
 
-    .hero-content p {
-        font-size: 0.8em;
-    }
+  footer .social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+  }
 
-    .services-section h2 {
-        font-size: 1.5rem;
-    }
-
-    .services-header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer .footer-section {
-        margin-bottom: 20px;
-    }
-
-    .footer .footer-sections {
-        flex-direction: column;
-    }
+  footer .copyright {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 }
 
-/* Extra Small Devices: max-width 400px */
-@media (max-width: 400px) {
-    .hero-content h1 {
-        font-size: 1.5em;
-    }
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8em;
+  }
 
-    .hero-content .cta-button {
-        padding: 10px 20px;
-    }
+  .hero-content p {
+    font-size: 0.85em;
+  }
 
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
+  footer form input[type="email"] {
+    width: 100%;
+  }
 
-    .footer-sections {
-        padding: 10px;
-    }
+  footer form button {
+    width: 100%;
+  }
+}
 
-    footer h2 {
-        font-size: 1.2rem;
-    }
-
-    footer .social-icons a {
-        font-size: 16px;
-    }
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.nav-link {
+  font-size: 1.1rem;
+  margin: 0 10px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.navbar-toggler-icon {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+.nav-link.active {
+font-weight: bold;
+color: #007bff; /* Highlight color */
 }
