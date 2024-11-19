@@ -395,3 +395,123 @@ footer {
     color: #000;
     text-decoration: none;
   }
+
+/* Default styles are for desktop screens. Additional styles for smaller devices are added below */
+
+/* Tablets: max-width 1024px */
+@media (max-width: 1024px) {
+    header.hero-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    footer .footer-sections {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Large Phones: max-width 768px */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content .highlight {
+        font-size: 1em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .service-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+
+    footer form input[type="email"] {
+        width: 90%;
+    }
+}
+
+/* Small Phones: max-width 576px */
+@media (max-width: 576px) {
+    header.hero-section {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content .highlight {
+        font-size: 0.9em;
+    }
+
+    .hero-content p {
+        font-size: 0.8em;
+    }
+
+    .services-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .services-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .footer .footer-sections {
+        flex-direction: column;
+    }
+}
+
+/* Extra Small Devices: max-width 400px */
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content .cta-button {
+        padding: 10px 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-sections {
+        padding: 10px;
+    }
+
+    footer h2 {
+        font-size: 1.2rem;
+    }
+
+    footer .social-icons a {
+        font-size: 16px;
+    }
+}
