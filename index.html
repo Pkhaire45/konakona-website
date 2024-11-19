@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kona Kona Interiors</title>
+  <link rel="icon" href="images/logo2.png" type="image/x-icon">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="whtsp.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -42,7 +44,7 @@
           <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="services.html">Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us</a>
@@ -52,6 +54,7 @@
   </div>
 </nav>
 </header>
+
 <div class="hero-section">
   <!-- Background Images -->
   <div class="hero-bg"></div>
@@ -63,14 +66,29 @@
 
   <!-- Hero Content -->
   <div class="container hero-content">
-    <h1>Precise concept design<br>for stylish living</h1>
+    <h1>Creating Spaces <br> You’ll Love to Live and Work In</h1>
     <p>
-      If you are looking at blank cassettes on the web, you may be very confused at the difference
-      in price. You may see some for as low as $.17 each. You may be saying to yourself.
+      Crafting Beautiful and Functional Spaces That Elevate the
+       Way You Live, Work, and Experience Everyday Life.
     </p>
     <a href="#" class="btn">Get Started</a>
   </div>
 </div>
+</div>
+<!-- Pop-Up Container -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <button id="closePopup" class="close-popup-btn">&times;</button>
+    <img src="images/logo2.png" alt="Illustration" class="popup-image">
+    <h2>Let's Talk</h2>
+    <p>Find out how we can benefit you!</p>
+    <form class="popup-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message..." required></textarea>
+      <button type="submit" class="submit-btn">Let's Talk</button>
+    </form>
+  </div>
 </div>
   <section class="why-choose-us py-5">
     <div class="container text-center">
@@ -113,16 +131,15 @@
     </div>
   </section>
   <!-- Heading -->
-<div class="container my-5">
-  <!-- Contact Heading -->
-  <div class="contact-heading">
-    <!-- <div class="vertical-line"></div> -->
-      <p class="subtitle">Latest</p>
-      <h1 class="main-title">Projects</h1><br>
-      <hr>
-
-     
-  </div>
+  <section class="services-header">
+    <div class="heading-container">
+      <span class="accent-bar"></span>
+      <div class="heading-text">
+        <h3>Latest</h3>
+        <h2>projects</h2>
+      </div>
+    </div>
+  </section>  
 <!-- Filter Options -->
 <div class="filter-options d-flex justify-content-center mb-4">
   <button class="btn filter-btn" data-filter="all">Show All</button>
@@ -160,16 +177,15 @@
   </div>
 </div>
   <!-- Heading -->
-  <div class="container my-5">
-    <!-- Contact Heading -->
-    <div class="contact-heading">
-      <!-- <div class="vertical-line"></div> -->
-        <p class="subtitle">Recent</p>
-        <h1 class="main-title">Work</h1><br>
-        <hr>
-  
-       
+  <section class="services-header">
+    <div class="heading-container">
+      <span class="accent-bar"></span>
+      <div class="heading-text">
+        <h3>Recent</h3>
+          <h2>work</h2>
+      </div>
     </div>
+  </section> 
 
 
 
@@ -224,6 +240,10 @@
 <button class="arrow right-arrow" onclick="slideRight()">&#8250;</button>
 </div>
 
+<a href="https://api.whatsapp.com/send?phone=919619555596" class="whatsapp-widget" target="_blank">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
   <footer>
     <div>
       <h2>READY TO WORK WITH US?</h2>
@@ -238,8 +258,8 @@
       <div class="footer-section">
         <h3>Social Links</h3>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/konakonainteriors/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/konakona_interiors?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
