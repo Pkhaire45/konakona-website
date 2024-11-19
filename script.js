@@ -49,4 +49,25 @@ function slideRight() {
   scrollPosition = Math.min(scrollPosition + cardWidth, maxScroll); // prevent overflow on right
   carousel.style.transform = `translateX(-${scrollPosition}px)`;
 }
+// Get elements
+const popup = document.getElementById("popup");
+const closePopupBtn = document.getElementById("closePopup");
 
+// Automatically show the popup after a delay
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    popup.style.display = "flex";
+  }, 1000); // Delay of 1 second (1000 ms) after page load
+});
+
+// Close popup when the close button is clicked
+closePopupBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+// Close popup when clicking outside the content
+window.addEventListener("click", (event) => {
+  if (event.target === popup) {
+    popup.style.display = "none";
+  }
+});

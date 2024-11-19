@@ -5,10 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Konakona Interior Design</title>
   <link rel="stylesheet" href="about.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="whtsp.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Bootstrap Icons CDN -->
 </head>
+<style>
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps it above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+ </style>
+
 <body>
-  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="images/logo2.png" alt="Logo" style="height: 40px;">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   
   <header class="hero-section">
     <div class="hero-content">
@@ -29,35 +68,39 @@
     </div>
   </header>
 
-  <!-- Mission, Vision, Values Section -->
-  <section class="mission-vision-values">
-    <div class="container">
-      <div class="card">
+  <section class="services-section">
+  
+    <div class="services-container">
+      <div class="service-box">
         <div class="icon">
-          <i class="bi bi-bullseye"></i> <!-- Mission icon -->
+          <i class="bi bi-rocket"></i>
         </div>
-        <h2>Our Mission</h2>
-        <p>To create innovative and beautiful interiors that inspire and enhance the lives of our clients. We believe in design that is not only visually appealing but also functional and sustainable.</p>
+        <h3>Our Mission</h3>
+        <p>To create innovative and beautiful interiors that inspire and enhance the lives of our clients. We believe in design that is not only visually appealing but also functional and sustainable.
+        </p>
+        <!-- <a href="#" class="btn">Read More</a> -->
       </div>
-
-      <div class="card">
+      <div class="service-box">
         <div class="icon">
-          <i class="bi bi-eye"></i> <!-- Vision icon -->
+          <i class="bi bi-eye"></i>
         </div>
-        <h2>Our Vision</h2>
-        <p>To be recognized as a leading interior design company known for excellence in design, creativity, and client satisfaction. We aim to create spaces that inspire and reflect individuality.</p>
+        <h3>Our Vision</h3>
+        <p> To be recognized as a leading interior design company known for excellence in design, creativity, and client satisfaction. We aim to create spaces that inspire and reflect individuality.</p>
+          <!-- <a href="#" class="btn">Read More</a> -->
       </div>
-
-      <div class="card">
+      <div class="service-box">
         <div class="icon">
-          <i class="bi bi-person-check"></i> <!-- New Values icon -->
-          <!-- Values icon (handshake) -->
+          <i class="bi bi-person-check"></i>
         </div>
-        <h2>Our Values</h2>
-        <p>We value creativity, collaboration, and integrity. We believe in working closely with our clients to understand their needs and deliver exceptional design solutions that exceed expectations.</p>
+        <h3>Our Values</h3>
+     <p>We value creativity, collaboration, and integrity. We believe in working closely with our clients to understand their needs and deliver exceptional design solutions that exceed expectations.</p>
+              <!-- <a href="#" class="btn">Read More</a> -->
       </div>
     </div>
   </section>
+  <a href="https://api.whatsapp.com/send?phone=919619555596" class="whatsapp-widget" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
   <footer>
     <div>
       <h2>READY TO WORK WITH US?</h2>
@@ -72,8 +115,8 @@
       <div class="footer-section">
         <h3>Social Links</h3>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#https://www.facebook.com/konakonainteriors/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/konakona_interiors?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
