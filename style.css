@@ -1029,3 +1029,48 @@ body{
     height: 24px;
   }
   
+
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .kona-contact {
+      grid-template-columns: 1fr;
+  }
+
+  .contact-image img {
+      border-radius: 10px 10px 0 0;
+  }
+
+  .contact-form,
+  .contact-info {
+      padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kona-section {
+      padding: 10px;
+  }
+
+  .contact-form h1 {
+      font-size: 24px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+      font-size: 13px;
+  }
+
+  .contact-form button {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .contact-info h3 {
+      font-size: 16px;
+  }
+
+  .contact-info p {
+      font-size: 14px;
+  }
+}
