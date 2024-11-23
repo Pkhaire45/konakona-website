@@ -405,7 +405,7 @@ body{
   
   footer .footer-sections {
     display: flex;
-    flex-wrap: wrap;
+     flex-wrap:wrap;
     justify-content: space-between;
     max-width: 1300px;
     margin: 0 auto;
@@ -630,6 +630,7 @@ body{
       font-size: 1rem;
       color: #555;
       margin-bottom: 20px;
+      
     }
     
     /* Button Styling */
@@ -874,6 +875,7 @@ body{
   .service-content p {
     font-size: 0.9rem;
     color: #666;
+    text-align: justify;
   }
 
  
