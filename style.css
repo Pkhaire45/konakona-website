@@ -118,27 +118,159 @@ body{
     }
 }
   
-  .why-choose-us {
-    /* background-image: url('images/s.png');  */
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    color: #000;
-   
-   
-  }
 
+
+
+
+
+  /* why choose us section */
+
+
+  .why-choose-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /* Section background color */
+  }
+  
   .why-choose-us h2 {
     font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #043348;
+    color: #043348; /* Section heading color */
+    margin-bottom: 40px;
   }
-
-  .why-choose-us p {
+  
+  .points-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between circles */
+  }
+  
+  .point {
+    background-color: #ffffff; /* Default circle background */
+    border: 2px solid #6c8793; /* Default circle border */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 10px; /* Adds additional spacing */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .point:hover {
+    background-color: #043348; /* Circle changes to dark color */
+    color: #ffffff; /* Text changes to white */
+  }
+  
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff; /* Icon background color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .icon-circle i {
+    color: #043348; /* Default icon color */
+    font-size: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .point h3 {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    color: #043348; /* Default text color */
+    margin: 10px 0;
+    transition: color 0.3s ease;
   }
+  
+  .point p {
+    font-size: 0.9rem;
+    color: #043348; /* Default text color */
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover State Styling */
+  .point:hover .icon-circle {
+    background-color: #043348; /* Icon background matches the circle */
+  }
+  
+  .point:hover .icon-circle i {
+    color: #ffffff; /* Icon changes to white */
+  }
+  
+  .point:hover h3,
+  .point:hover p {
+    color: #ffffff; /* Text changes to white */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .points-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Adjust spacing for mobile */
+    }
+  
+    .point {
+      width: 180px; /* Slightly smaller for mobile */
+      height: 180px;
+    }
+  
+    .icon-circle {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .point h3 {
+      font-size: 1rem; /* Adjust text size for mobile */
+    }
+  
+    .point p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .point {
+      width: 165px; /* Further adjustment for smaller screens */
+      height: 165px;
+    }
+  
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .point h3 {
+      font-size: 0.9rem;
+    }
+  
+    .point p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 
   .feature-card {
     background: #fff;
@@ -717,6 +849,7 @@ body{
       opacity: 0;
       animation: fade-in 2s ease-in-out forwards;
       animation-delay: 1s;
+      text-align: justify;
     }
     
     .hero-content1 a.cta-button {
