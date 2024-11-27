@@ -49,25 +49,39 @@ function slideRight() {
   scrollPosition = Math.min(scrollPosition + cardWidth, maxScroll); // prevent overflow on right
   carousel.style.transform = `translateX(-${scrollPosition}px)`;
 }
-// Get elements
-const popup = document.getElementById("popup");
-const closePopupBtn = document.getElementById("closePopup");
 
-// Automatically show the popup after a delay
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    popup.style.display = "flex";
-  }, 1000); // Delay of 1 second (1000 ms) after page load
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize EmailJS with your public key
+  emailjs.init('GKF97LA-Z70XR3EtC');  // Replace 'YOUR_PUBLIC_KEY' with your actual public key
+
+  // Now you can attach event listeners or other logic
+  document.getElementById('contact-form1').addEventListener('submit', function(event) {
+      event.preventDefault();  // Prevent form from reloading the page
+
+      const formData = new FormData(event.target);
+      const fullName = formData.get('full-name');
+      const email = formData.get('email');
+      const message = formData.get('message');
+
+      console.log('Form Data:', { fullName, email, message });
+      
+      const templateParams = {
+          full_name: fullName,
+          email: email,
+          message: message
+      };
+
+      // Send the email using EmailJS
+      emailjs.send('service_blhljpr', 'template_szx51pe', templateParams)
+          .then(function(response) {
+              console.log('Success:', response);
+              alert('Your message has been sent successfully!');
+              document.getElementById('contact-form1').reset();  // Reset the form
+          })
+          .catch(function(error) {
+              console.log('Error:', error);
+              alert('Something went wrong. Please try again later.');
+          });
+  });
 });
 
-// Close popup when the close button is clicked
-closePopupBtn.addEventListener("click", () => {
-  popup.style.display = "none";
-});
-
-// Close popup when clicking outside the content
-window.addEventListener("click", (event) => {
-  if (event.target === popup) {
-    popup.style.display = "none";
-  }
-});
